@@ -30,7 +30,7 @@ router.get('/', (req, res) => {
     res.send('ok')
 })
 
-router.get('/api/new-event', async (req, res) => {
+router.post('/api/event', async (req, res) => {
   try {
     const event = new Event({
       title: "blabla",
